@@ -13,7 +13,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
     --primary-blue: #0066ff;
     --primary-purple: #6366f1;
@@ -39,7 +38,6 @@
     background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 50%, #ecfdf5 100%);
     overflow-x: hidden;
 }
-
         /* Animações */
         @keyframes fadeInUp {
             from {
@@ -51,7 +49,6 @@
                 transform: translateY(0);
             }
         }
-
         @keyframes fadeInRight {
             from {
                 opacity: 0;
@@ -62,7 +59,6 @@
                 transform: translateX(0);
             }
         }
-
         @keyframes fadeInLeft {
             from {
                 opacity: 0;
@@ -73,7 +69,6 @@
                 transform: translateX(0);
             }
         }
-
         @keyframes pulse {
             0%, 100% {
                 transform: scale(1);
@@ -82,7 +77,6 @@
                 transform: scale(1.05);
             }
         }
-
         @keyframes float {
             0%, 100% {
                 transform: translateY(0px);
@@ -91,7 +85,6 @@
                 transform: translateY(-10px);
             }
         }
-
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
@@ -103,27 +96,21 @@
                 background-position: 0% 50%;
             }
         }
-
         .animate-fadeInUp {
             animation: fadeInUp 0.8s ease-out forwards;
         }
-
         .animate-fadeInRight {
             animation: fadeInRight 0.8s ease-out forwards;
         }
-
         .animate-fadeInLeft {
             animation: fadeInLeft 0.8s ease-out forwards;
         }
-
         .animate-pulse {
             animation: pulse 2s infinite;
         }
-
         .animate-float {
             animation: float 3s ease-in-out infinite;
         }
-
         /* Header */
         .header {
             position: fixed;
@@ -136,12 +123,10 @@
             border-bottom: 1px solid var(--border-light);
             transition: all 0.3s ease;
         }
-
         .header.scrolled {
             background: rgba(255, 255, 255, 0.98);
             box-shadow: var(--shadow-lg);
         }
-
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -151,7 +136,6 @@
             justify-content: space-between;
             height: 4rem;
         }
-
         .nav-logo {
             display: flex;
             align-items: center;
@@ -159,7 +143,6 @@
             text-decoration: none;
             color: var(--text-primary);
         }
-
         .nav-logo-icon {
             width: 2.5rem;
             height: 2.5rem;
@@ -171,24 +154,20 @@
             color: white;
             font-size: 1.25rem;
         }
-
         .nav-logo-text h1 {
             font-size: 1.25rem;
             font-weight: 700;
             line-height: 1.2;
         }
-
         .nav-logo-text p {
             font-size: 0.75rem;
             color: var(--text-secondary);
         }
-
         .nav-menu {
             display: flex;
             align-items: center;
             gap: 2rem;
         }
-
         .nav-link {
             color: var(--text-secondary);
             text-decoration: none;
@@ -198,13 +177,11 @@
             transition: all 0.3s ease;
             position: relative;
         }
-
         .nav-link:hover,
         .nav-link.active {
             color: var(--primary-blue);
             background: rgba(37, 99, 235, 0.1);
         }
-
         .nav-link::after {
             content: '';
             position: absolute;
@@ -216,19 +193,16 @@
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
-
         .nav-link:hover::after,
         .nav-link.active::after {
             width: 80%;
         }
-
         .nav-toggle {
             display: none;
             flex-direction: column;
             cursor: pointer;
             padding: 0.5rem;
         }
-
         .nav-toggle span {
             width: 1.5rem;
             height: 2px;
@@ -237,7 +211,6 @@
             transition: 0.3s;
             border-radius: 2px;
         }
-
         /* Hero Section */
         .hero {
          position: relative;
@@ -248,7 +221,6 @@
     background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
     padding-bottom: 4rem;
         }
-
         .hero-background {
              position: absolute;
     inset: 0;
@@ -257,13 +229,11 @@
     background-position: center;
     opacity: 1.0;
         }
-
         .hero-overlay {
             position: absolute;
             inset: 0;
             background: var(--gradient-hero);
         }
-
         .hero-content {
             position: relative;
             z-index: 10;
@@ -275,11 +245,9 @@
             gap: 4rem;
             align-items: center;
         }
-
         .hero-text {
             color: white;
         }
-
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -292,34 +260,29 @@
             margin-bottom: 2rem;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
         .hero-title {
             font-size: 4rem;
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1.5rem;
         }
-
         .hero-title .highlight {
             background: linear-gradient(45deg, #fbbf24, #f97316);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
         .hero-description {
             font-size: 1.25rem;
             color: rgba(255, 255, 255, 0.9);
             margin-bottom: 2rem;
             max-width: 600px;
         }
-
         .hero-buttons {
             display: flex;
             gap: 1rem;
             margin-bottom: 3rem;
         }
-
         .btn {
             display: inline-flex;
             align-items: center;
@@ -334,47 +297,39 @@
             text-decoration: none;
             white-space: nowrap;
         }
-
         .btn-primary {
             background: var(--gradient-secondary);
             color: white;
             box-shadow: var(--shadow-lg);
         }
-
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-xl);
         }
-
         .btn-secondary {
             background: rgba(255, 255, 255, 0.1);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
         }
-
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
-
         .btn-outline {
             background: transparent;
             color: var(--primary-blue);
             border: 2px solid var(--primary-blue);
         }
-
         .btn-outline:hover {
             background: var(--primary-blue);
             color: white;
         }
-
         .hero-stats {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.5rem;
         }
-
         .stat-card {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -384,46 +339,40 @@
             text-align: center;
             color: white;
         }
-
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
             color: #fbbf24;
             margin-bottom: 0.5rem;
         }
-
         .stat-label {
             font-size: 0.875rem;
             opacity: 0.9;
         }
-
         .hero-quick-access {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 1.5rem;
             padding: 2rem;
+            margin-right: 200px;
         }
-
         .quick-access-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 1.5rem;
         }
-
         .quick-access-header h3 {
             color: white;
             font-size: 1.25rem;
             font-weight: 600;
         }
-
         .quick-access-items {
             display: flex;
             flex-direction: column;
             gap: 1rem;
         }
-
         .quick-access-item {
             display: flex;
             align-items: center;
@@ -434,12 +383,10 @@
             transition: all 0.3s ease;
             cursor: pointer;
         }
-
         .quick-access-item:hover {
             background: rgba(255, 255, 255, 0.1);
             transform: translateX(5px);
         }
-
         .quick-access-icon {
             width: 2.5rem;
             height: 2.5rem;
@@ -451,18 +398,15 @@
             color: white;
             flex-shrink: 0;
         }
-
         .quick-access-text h4 {
             color: white;
             font-weight: 500;
             margin-bottom: 0.25rem;
         }
-
         .quick-access-text p {
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.875rem;
         }
-
         /* Scroll Indicator */
         .scroll-indicator {
             position: absolute;
@@ -471,7 +415,6 @@
             transform: translateX(-50%);
             z-index: 10;
         }
-
         .scroll-mouse {
             width: 1.5rem;
             height: 2.5rem;
@@ -481,7 +424,6 @@
             justify-content: center;
             padding-top: 0.5rem;
         }
-
         .scroll-wheel {
             width: 2px;
             height: 0.75rem;
@@ -489,7 +431,6 @@
             border-radius: 1px;
             animation: scroll 1.5s infinite;
         }
-
         @keyframes scroll {
             0% {
                 transform: translateY(0);
@@ -500,28 +441,24 @@
                 opacity: 0;
             }
         }
-
         /* Quick Access Cards */
     .quick-access-section {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1e40af 100%);
     padding: 8rem 0 5rem 0;
     margin-top: 0;
     position: relative;
     z-index: 20;
 }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         .quick-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
-
         .quick-card {
             background: white;
             border-radius: 1.5rem;
@@ -534,7 +471,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .quick-card::before {
             content: '';
             position: absolute;
@@ -545,16 +481,13 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
             transition: left 0.5s;
         }
-
         .quick-card:hover::before {
             left: 100%;
         }
-
         .quick-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-xl);
         }
-
         .quick-card-icon {
             width: 4rem;
             height: 4rem;
@@ -567,89 +500,73 @@
             color: white;
             transition: transform 0.3s ease;
         }
-
         .quick-card:hover .quick-card-icon {
             transform: scale(1.1);
         }
-
         .quick-card-icon.blue {
             background: linear-gradient(135deg, #3b82f6, #1d4ed8);
         }
-
         .quick-card-icon.purple {
             background: linear-gradient(135deg, #8b5cf6, #7c3aed);
         }
-
         .quick-card-icon.green {
             background: linear-gradient(135deg, #10b981, #059669);
         }
-
         .quick-card-icon.orange {
             background: linear-gradient(135deg, #f59e0b, #ea580c);
         }
-
         .quick-card h3 {
             font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
             color: var(--text-primary);
         }
-
         .quick-card p {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-
         .quick-card .btn {
             width: 100%;
             background: var(--gradient-primary);
             color: white;
             justify-content: center;
         }
-
         /* Sections */
         .section {
             padding: 5rem 0;
         }
-
         .section-header {
             text-align: center;
             margin-bottom: 4rem;
         }
-
         .section-title {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--text-primary);
         }
-
         .section-title .highlight {
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
         .section-subtitle {
             font-size: 1.25rem;
             color: var(--text-secondary);
             max-width: 600px;
             margin: 0 auto;
         }
-
         /* Services */
         .services {
             background: white;
         }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
             gap: 2rem;
         }
-
         .service-card {
             display: flex;
             gap: 2rem;
@@ -660,12 +577,10 @@
             border: 1px solid var(--border-light);
             transition: all 0.3s ease;
         }
-
         .service-card:hover {
             transform: translateY(-4px);
             box-shadow: var(--shadow-xl);
         }
-
         .service-icon {
             width: 4rem;
             height: 4rem;
@@ -678,28 +593,23 @@
             flex-shrink: 0;
             transition: transform 0.3s ease;
         }
-
         .service-card:hover .service-icon {
             transform: scale(1.1);
         }
-
         .service-content h3 {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
             color: var(--text-primary);
         }
-
         .service-content p {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-
         .service-features {
             list-style: none;
         }
-
         .service-features li {
             display: flex;
             align-items: center;
@@ -707,7 +617,6 @@
             padding: 0.5rem 0;
             color: var(--text-secondary);
         }
-
         .service-features li::before {
             content: '✓';
             color: var(--accent-green);
@@ -721,12 +630,10 @@
             justify-content: center;
             font-size: 0.75rem;
         }
-
         /* Jobs */
         .jobs {
             background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
         }
-
         .jobs-filters {
             display: flex;
             justify-content: center;
@@ -734,7 +641,6 @@
             margin-bottom: 3rem;
             flex-wrap: wrap;
         }
-
         .filter-btn {
             padding: 0.75rem 1.5rem;
             border: 2px solid var(--border-light);
@@ -745,7 +651,6 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
-
         .filter-btn.active,
         .filter-btn:hover {
             background: var(--gradient-primary);
@@ -754,14 +659,12 @@
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
-
         .jobs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
-
         .job-card {
             background: white;
             padding: 2rem;
@@ -772,7 +675,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .job-card::before {
             content: '';
             position: absolute;
@@ -784,35 +686,29 @@
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
-
         .job-card:hover::before {
             transform: scaleX(1);
         }
-
         .job-card:hover {
             transform: translateY(-4px);
             box-shadow: var(--shadow-xl);
         }
-
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 1rem;
         }
-
         .job-title {
             font-size: 1.25rem;
             font-weight: 600;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
         }
-
         .job-company {
             color: var(--text-secondary);
             font-weight: 500;
         }
-
         .job-badge {
             background: var(--accent-green);
             color: white;
@@ -821,18 +717,15 @@
             font-size: 0.75rem;
             font-weight: 500;
         }
-
         .job-badge.featured {
             background: var(--gradient-secondary);
         }
-
         .job-info {
             display: flex;
             gap: 1rem;
             margin-bottom: 1rem;
             flex-wrap: wrap;
         }
-
         .job-info span {
             display: flex;
             align-items: center;
@@ -840,25 +733,21 @@
             color: var(--text-secondary);
             font-size: 0.875rem;
         }
-
         .job-description {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-
         .job-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .job-salary {
             font-weight: 600;
             color: var(--accent-green);
             font-size: 1.125rem;
         }
-
         .job-apply {
             background: var(--gradient-primary);
             color: white;
@@ -869,23 +758,19 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
-
         .job-apply:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
-
         /* Courses */
         .courses {
             background: white;
         }
-
         .courses-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
-
         .course-card {
             background: white;
             border-radius: 1.5rem;
@@ -894,29 +779,24 @@
             border: 1px solid var(--border-light);
             transition: all 0.3s ease;
         }
-
         .course-card:hover {
             transform: translateY(-4px);
             box-shadow: var(--shadow-xl);
         }
-
         .course-image {
             position: relative;
             height: 200px;
             overflow: hidden;
         }
-
         .course-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-
         .course-card:hover .course-image img {
             transform: scale(1.05);
         }
-
         .course-badge {
             position: absolute;
             top: 1rem;
@@ -928,11 +808,9 @@
             font-size: 0.75rem;
             font-weight: 500;
         }
-
         .course-content {
             padding: 2rem;
         }
-
         .course-category {
             background: rgba(37, 99, 235, 0.1);
             color: var(--primary-blue);
@@ -943,26 +821,22 @@
             margin-bottom: 1rem;
             display: inline-block;
         }
-
         .course-content h3 {
             font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
             color: var(--text-primary);
         }
-
         .course-content p {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-
         .course-info {
             display: flex;
             justify-content: space-between;
             margin-bottom: 1.5rem;
         }
-
         .course-info span {
             display: flex;
             align-items: center;
@@ -970,7 +844,6 @@
             color: var(--text-secondary);
             font-size: 0.875rem;
         }
-
         .course-level {
             background: rgba(16, 185, 129, 0.1);
             color: var(--accent-green);
@@ -979,12 +852,10 @@
             font-size: 0.75rem;
             font-weight: 500;
         }
-
         /* News */
         .news {
             background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
         }
-
         .news-filters {
             display: flex;
             justify-content: center;
@@ -992,7 +863,6 @@
             margin-bottom: 3rem;
             flex-wrap: wrap;
         }
-
         .news-filter-btn {
             padding: 0.75rem 1.5rem;
             border: 2px solid var(--border-light);
@@ -1004,7 +874,6 @@
             font-weight: 500;
             font-size: 0.9rem;
         }
-
         .news-filter-btn.active,
         .news-filter-btn:hover {
             background: var(--gradient-primary);
@@ -1013,14 +882,12 @@
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
-
         .news-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
         }
-
         .news-card {
             background: white;
             border-radius: 1.5rem;
@@ -1031,7 +898,6 @@
             cursor: pointer;
             position: relative;
         }
-
         .news-card::before {
             content: '';
             position: absolute;
@@ -1043,33 +909,27 @@
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
-
         .news-card:hover::before {
             transform: scaleX(1);
         }
-
         .news-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-xl);
         }
-
         .news-image {
             position: relative;
             height: 200px;
             overflow: hidden;
         }
-
         .news-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-
         .news-card:hover .news-image img {
             transform: scale(1.05);
         }
-
         .news-category {
             position: absolute;
             top: 1rem;
@@ -1082,23 +942,18 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
         .news-category.vagas {
             background: linear-gradient(135deg, #3b82f6, #1d4ed8);
         }
-
         .news-category.cursos {
             background: linear-gradient(135deg, #10b981, #059669);
         }
-
         .news-category.beneficios {
             background: linear-gradient(135deg, #f59e0b, #ea580c);
         }
-
         .news-category.economia {
             background: linear-gradient(135deg, #8b5cf6, #7c3aed);
         }
-
         .news-date {
             position: absolute;
             top: 1rem;
@@ -1110,11 +965,9 @@
             font-size: 0.75rem;
             backdrop-filter: blur(10px);
         }
-
         .news-content {
             padding: 2rem;
         }
-
         .news-title {
             font-size: 1.25rem;
             font-weight: 600;
@@ -1126,7 +979,6 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-
         .news-excerpt {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
@@ -1136,7 +988,6 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-
         .news-meta {
             display: flex;
             align-items: center;
@@ -1144,7 +995,6 @@
             padding-top: 1rem;
             border-top: 1px solid var(--border-light);
         }
-
         .news-author {
             display: flex;
             align-items: center;
@@ -1152,7 +1002,6 @@
             color: var(--text-secondary);
             font-size: 0.875rem;
         }
-
         .news-read-more {
             color: var(--primary-blue);
             font-weight: 500;
@@ -1162,64 +1011,52 @@
             gap: 0.25rem;
             transition: all 0.3s ease;
         }
-
         .news-read-more:hover {
             gap: 0.5rem;
         }
-
         .news-featured {
             grid-column: span 2;
         }
-
         .news-featured .news-image {
             height: 300px;
         }
-
         .news-featured .news-title {
             font-size: 1.5rem;
         }
-
         .news-featured .news-content {
             padding: 2.5rem;
         }
-
         /* Contact */
         .contact {
             background: linear-gradient(135deg, var(--bg-dark) 0%, #1e40af 100%);
             color: white;
         }
-
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
         }
-
         .contact-info h2 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
-
         .contact-info h2 .highlight {
             background: var(--gradient-secondary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
         .contact-info > p {
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 2rem;
             font-size: 1.125rem;
         }
-
         .contact-item {
             display: flex;
             gap: 1rem;
             margin-bottom: 2rem;
         }
-
         .contact-item-icon {
             width: 3rem;
             height: 3rem;
@@ -1232,17 +1069,14 @@
             font-size: 1.25rem;
             flex-shrink: 0;
         }
-
         .contact-item h4 {
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
-
         .contact-item p {
             color: rgba(255, 255, 255, 0.8);
             white-space: pre-line;
         }
-
         .contact-form {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
@@ -1250,24 +1084,20 @@
             border-radius: 1.5rem;
             padding: 2.5rem;
         }
-
         .form-group {
             margin-bottom: 1.5rem;
         }
-
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }
-
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
             color: white;
         }
-
         .form-group input,
         .form-group select,
         .form-group textarea {
@@ -1277,108 +1107,106 @@
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 0.5rem;
             color: white;
-            font-size: 1rem;
+            font-size: 1rem;    
             transition: border-color 0.3s ease;
             font-family: inherit;
         }
-
         .form-group input::placeholder,
         .form-group textarea::placeholder {
             color: rgba(255, 255, 255, 0.6);
         }
-
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: var(--secondary-yellow);
         }
-
         .form-group textarea {
             resize: vertical;
             min-height: 120px;
         }
-
         /* Footer */
         .footer {
             background: var(--bg-dark);
             color: white;
             padding: 3rem 0 1rem;
         }
-
         .footer-content {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 3rem;
             margin-bottom: 2rem;
         }
+.footer-logo {
+    display: flex;
+    align-items: flex-start; /* alinha topo com topo */
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
 
-        .footer-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
+.footer-logo-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--gradient-primary);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem; /* ajuste fino opcional */
+}
 
-        .footer-logo-icon {
-            width: 2.5rem;
-            height: 2.5rem;
-            background: var(--gradient-primary);
-            border-radius: 0.75rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.25rem;
-        }
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-        .footer-logo-text h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
+.footer-logo-text h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.25;
+}
 
-        .footer-logo-text p {
-            font-size: 0.875rem;
-            color: var(--text-light);
-        }
-
+.footer-logo-text p {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.2;
+}
         .footer-section p {
             color: var(--text-light);
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-
         .footer-section h4 {
             font-size: 1.125rem;
             font-weight: 600;
             margin-bottom: 1rem;
         }
-
         .footer-section ul {
             list-style: none;
         }
-
         .footer-section li {
             margin-bottom: 0.5rem;
         }
-
         .footer-section a {
             color: var(--text-light);
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
         .footer-section a:hover {
             color: var(--secondary-yellow);
         }
-
         .footer-bottom {
             border-top: 1px solid #374151;
             padding-top: 2rem;
             text-align: center;
             color: var(--text-light);
         }
-
         /* Modals */
         .modal {
             display: none;
@@ -1391,13 +1219,11 @@
             background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(5px);
         }
-
         .modal.active {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
         .modal-content {
             background: white;
             border-radius: 1.5rem;
@@ -1409,7 +1235,6 @@
             box-shadow: var(--shadow-xl);
             animation: modalSlideIn 0.3s ease-out;
         }
-
         @keyframes modalSlideIn {
             from {
                 opacity: 0;
@@ -1420,23 +1245,19 @@
                 transform: scale(1) translateY(0);
             }
         }
-
         .modal-header {
             padding: 2rem 2rem 1rem;
             border-bottom: 1px solid var(--border-light);
         }
-
         .modal-header h2 {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
         }
-
         .modal-header p {
             color: var(--text-secondary);
         }
-
         .modal-close {
             position: absolute;
             right: 1rem;
@@ -1453,26 +1274,21 @@
             align-items: center;
             justify-content: center;
         }
-
         .modal-close:hover {
             color: var(--text-primary);
         }
-
         .modal-body {
             padding: 2rem;
         }
-
         .tabs {
             margin-bottom: 2rem;
         }
-
         .tabs-list {
             display: flex;
             background: var(--bg-secondary);
             border-radius: 0.5rem;
             padding: 0.25rem;
         }
-
         .tabs-trigger {
             flex: 1;
             padding: 0.75rem 1rem;
@@ -1484,22 +1300,18 @@
             font-weight: 500;
             color: var(--text-secondary);
         }
-
         .tabs-trigger.active {
             background: white;
             color: var(--text-primary);
             box-shadow: var(--shadow-sm);
         }
-
         .tabs-content {
             display: none;
             padding-top: 1.5rem;
         }
-
         .tabs-content.active {
             display: block;
         }
-
         .upload-area {
             border: 2px dashed var(--border-light);
             border-radius: 0.75rem;
@@ -1508,12 +1320,10 @@
             transition: all 0.3s ease;
             cursor: pointer;
         }
-
         .upload-area:hover {
             border-color: var(--primary-blue);
             background: rgba(37, 99, 235, 0.05);
         }
-
         .upload-icon {
             width: 3rem;
             height: 3rem;
@@ -1526,7 +1336,6 @@
             color: var(--text-secondary);
             font-size: 1.25rem;
         }
-
         .info-box {
             background: rgba(37, 99, 235, 0.1);
             border: 1px solid rgba(37, 99, 235, 0.2);
@@ -1534,31 +1343,26 @@
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
-
         .info-box h3 {
             color: var(--primary-blue);
             font-weight: 600;
             margin-bottom: 1rem;
         }
-
         .info-box ul {
             list-style: none;
             color: var(--primary-blue);
         }
-
         .info-box li {
             padding: 0.25rem 0;
             position: relative;
             padding-left: 1.5rem;
         }
-
         .info-box li::before {
             content: '•';
             position: absolute;
             left: 0;
             font-weight: bold;
         }
-
         /* Back to Top */
         .back-to-top {
             position: fixed;
@@ -1579,16 +1383,13 @@
             z-index: 1000;
             box-shadow: var(--shadow-lg);
         }
-
         .back-to-top:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-xl);
         }
-
         .back-to-top.show {
             display: flex;
         }
-
         /* Responsive Design */
         @media (max-width: 1024px) {
             .hero-content {
@@ -1596,32 +1397,26 @@
                 text-align: center;
                 gap: 2rem;
             }
-
             .hero-quick-access {
                 max-width: 400px;
                 margin: 0 auto;
             }
-
             .services-grid {
                 grid-template-columns: 1fr;
             }
-
             .service-card {
                 flex-direction: column;
                 text-align: center;
             }
-
             .contact-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-
             .footer-content {
                 grid-template-columns: 1fr 1fr;
                 gap: 2rem;
             }
         }
-
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
@@ -1636,193 +1431,139 @@
                 padding: 2rem 0;
                 gap: 0;
             }
-
             .nav-menu.active {
                 left: 0;
             }
-
             .nav-menu .nav-link {
                 display: block;
                 padding: 1rem;
                 margin: 0;
             }
-
             .nav-toggle {
                 display: flex;
             }
-
             .nav-toggle.active span:nth-child(2) {
                 opacity: 0;
             }
-
             .nav-toggle.active span:nth-child(1) {
                 transform: translateY(6px) rotate(45deg);
             }
-
             .nav-toggle.active span:nth-child(3) {
                 transform: translateY(-6px) rotate(-45deg);
             }
-
             .hero-title {
                 font-size: 2.5rem;
             }
-
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-
             .hero-stats {
                   display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-bottom: 6rem;
             }
-
             .stat-number {
                 font-size: 1.5rem;
             }
-
             .quick-grid {
                 grid-template-columns: 1fr;
             }
-
             .section-title {
                 font-size: 2rem;
             }
-
             .jobs-grid {
                 grid-template-columns: 1fr;
             }
-
             .courses-grid {
                 grid-template-columns: 1fr;
             }
-
             .footer-content {
                 grid-template-columns: 1fr;
             }
-
             .form-row {
                 grid-template-columns: 1fr;
             }
-
             .modal-content {
                 width: 95%;
                 margin: 1rem;
             }
-
             .modal-header,
             .modal-body {
                 padding: 1.5rem;
             }
-
             .news-featured {
                 grid-column: span 1;
             }
-            
-            .news-grid {
+                        .news-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .news-filters {
+                        .news-filters {
                 gap: 0.5rem;
             }
-            
-            .news-filter-btn {
+                        .news-filter-btn {
                 padding: 0.5rem 1rem;
                 font-size: 0.8rem;
             }
         }
-
         @media (max-width: 480px) {
             .hero-title {
                 font-size: 2rem;
             }
-
             .hero-description {
                 font-size: 1rem;
             }
-
             .btn {
                 padding: 0.75rem 1.5rem;
                 font-size: 0.9rem;
             }
-
             .section-title {
                 font-size: 1.75rem;
             }
-
             .quick-card,
             .service-card,
             .contact-form {
                 padding: 1.5rem;
             }
-
             .hero-stats {
                 grid-template-columns: 1fr;
             }
         }
-
         /* Utility Classes */
         .hidden {
             display: none !important;
         }
-
         .opacity-0 {
             opacity: 0;
         }
-
         .opacity-100 {
             opacity: 1;
         }
-
         .transition-all {
             transition: all 0.3s ease;
         }
-
         .text-center {
             text-align: center;
         }
-
         .mb-4 {
             margin-bottom: 1rem;
         }
-
         .mt-4 {
             margin-top: 1rem;
         }
-
         .p-4 {
             padding: 1rem;
         }
-
         .rounded {
             border-radius: 0.5rem;
         }
-
         .shadow {
             box-shadow: var(--shadow-md);
         }
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="modal active" style="background: var(--gradient-primary);">
-        <div style="text-align: center; color: white;">
-            <div style="width: 50px; height: 50px; border: 3px solid rgba(255, 255, 255, 0.3); border-top: 3px solid white; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
-            <h2>Carregando Portal...</h2>
-            <p>Preparando a melhor experiência para você</p>
-        </div>
-    </div>
-
-    <style>
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-
     <!-- Header -->
     <header class="header" id="header">
         <div class="nav-container">
@@ -1835,16 +1576,14 @@
                     <p>Portal Oficial</p>
                 </div>
             </a>
-
             <nav class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link active">Início</a>
                 <a href="#services" class="nav-link">Serviços</a>
                 <a href="#jobs" class="nav-link">Vagas</a>
                 <a href="#courses" class="nav-link">Cursos</a>
-                <a href="#noticias" class="nav-link">Notícias</a>
-                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#contact" class="nav-link">Notícias</a>
+           <!--     <a href="#contact" class="nav-link">Contato</a>-->
             </nav>
-
             <div class="nav-toggle" id="nav-toggle">
                 <span></span>
                 <span></span>
@@ -1860,21 +1599,18 @@
         
         <div class="hero-content">
             <div class="hero-text">
-                <div class="hero-badge animate-fadeInUp">
+                <div class="hero-badge animate-fadeInUp" style="margin-top: 50px;">
                     <i class="fas fa-star" style="color: #fbbf24;"></i>
-                    <span>Portal Oficial do Governo</span>
+                    <span>Portal do Trabalho    </span>
                 </div>
-
                 <h1 class="hero-title animate-fadeInUp" style="animation-delay: 0.2s;">
                     <span class="highlight">Assaí Conectando</span><br>
                     Talentos ao Futuro
                 </h1>
-
                 <p class="hero-description animate-fadeInUp" style="animation-delay: 0.4s;">
                     Sua jornada profissional começa aqui. Encontre oportunidades únicas, 
                     desenvolva habilidades essenciais e construa o futuro que você merece.
                 </p>
-
                 <div class="hero-buttons animate-fadeInUp" style="animation-delay: 0.6s;">
                     <button class="btn btn-primary" onclick="scrollToSection('services')">
                         <i class="fas fa-rocket"></i>
@@ -1885,26 +1621,10 @@
                         Buscar Vagas
                     </button>
                 </div>
-
-                <div class="hero-stats animate-fadeInUp" style="animation-delay: 0.8s;">
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="15000">0</div>
-                        <div class="stat-label">Vagas Cadastradas</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="8500">0</div>
-                        <div class="stat-label">Pessoas Empregadas</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" data-target="120">0</div>
-                        <div class="stat-label">Cursos Disponíveis</div>
-                    </div>
                 </div>
             </div>
-
             <div class="hero-quick-access animate-fadeInLeft" style="animation-delay: 1s; ">
                 <div class="quick-access-header">
-                    <h3>Acesso Rápido</h3>
                     <i class="fas fa-target" style="color: #fbbf24;"></i>
                 </div>
                 <div class="quick-access-items" style="margin-top: 10px;">
@@ -1917,7 +1637,8 @@
                             <p>Registre seu perfil</p>
                         </div>
                         <i class="fas fa-chevron-right" style="color: rgba(255, 255, 255, 0.6);"></i>
-                    </div>                    </div>
+                    </div>
+                    </div>
                     <div class="quick-access-item" style="margin-top: 30px;" onclick="scrollToSection('courses')">
                         <div class="quick-access-icon">
                             <i class="fas fa-graduation-cap"></i>
@@ -1932,7 +1653,6 @@
                 </div>
             </div>
         </div>
-
         <div class="scroll-indicator">
             <div class="scroll-mouse">
                 <div class="scroll-wheel"></div>
@@ -1941,49 +1661,7 @@
     </section>
 
     <!-- Quick Access Cards -->
-    <section class="quick-access-section">
-        <div class="container">
-            <div class="quick-grid">
-                <div class="quick-card" onclick="openModal('curriculum-modal')">
-                    <div class="quick-card-icon blue">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <h3>Cadastrar Currículo</h3>
-                    <p>Registre seu perfil profissional e seja encontrado por recrutadores de todo o país</p>
-                    <button class="btn">
-                        <i class="fas fa-arrow-right"></i>
-                        Acessar
-                    </button>
-                </div>
-
-                <div class="quick-card" onclick="openModal('jobs-modal')">
-                    <div class="quick-card-icon purple">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Buscar Vagas</h3>
-                    <p>Encontre oportunidades ideais para seu perfil profissional em diversas áreas</p>
-                    <button class="btn">
-                        <i class="fas fa-arrow-right"></i>
-                        Buscar
-                    </button>
-                </div>
-
-                <div class="quick-card" onclick="scrollToSection('courses')">
-                    <div class="quick-card-icon green">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Cursos Gratuitos</h3>
-                    <p>Desenvolva novas habilidades com nossos cursos certificados e gratuitos</p>
-                    <button class="btn">
-                        <i class="fas fa-arrow-right"></i>
-                        Ver Cursos
-                    </button>
-                </div>
-
-                
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Services Section -->
     <section id="services" class="section services">
@@ -1996,7 +1674,6 @@
                     Soluções completas para sua carreira profissional, desde a qualificação até a colocação no mercado de trabalho
                 </p>
             </div>
-
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
@@ -2013,7 +1690,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
                         <i class="fas fa-chart-line"></i>
@@ -2029,7 +1705,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
                         <i class="fas fa-shield-alt"></i>
@@ -2045,7 +1720,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">
                         <i class="fas fa-users"></i>
@@ -2076,7 +1750,6 @@
                     Oportunidades selecionadas especialmente para você. Encontre sua próxima carreira aqui.
                 </p>
             </div>
-
             <div class="jobs-filters">
                 <button class="filter-btn active" data-filter="all">Todas as Vagas</button>
                 <button class="filter-btn" data-filter="tech">Tecnologia</button>
@@ -2084,11 +1757,9 @@
                 <button class="filter-btn" data-filter="sales">Vendas</button>
                 <button class="filter-btn" data-filter="health">Saúde</button>
             </div>
-
             <div class="jobs-grid" id="jobs-grid">
                 <!-- Jobs will be loaded dynamically -->
             </div>
-
             <div class="text-center">
                 <button class="btn btn-outline" onclick="loadMoreJobs()">
                     <i class="fas fa-plus"></i>
@@ -2109,7 +1780,6 @@
                     Desenvolva suas habilidades com nossos cursos gratuitos e certificados. Invista no seu futuro profissional.
                 </p>
             </div>
-
             <div class="courses-grid">
                 <div class="course-card">
                     <div class="course-image">
@@ -2131,7 +1801,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="course-card">
                     <div class="course-image">
                         <img src="/placeholder.svg?height=200&width=300&text=Marketing+Digital" alt="Curso de Marketing Digital">
@@ -2152,7 +1821,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="course-card">
                     <div class="course-image">
                         <img src="/placeholder.svg?height=200&width=300&text=Excel+Avançado" alt="Curso de Excel">
@@ -2178,125 +1846,83 @@
     </section>
 
     <!-- News Section -->
-    <section id="noticias" class="section news">
-        <div class="container">
+    <section id="contact" class="section contact">
+         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
+                <h2 class="section-title" style="color: white;">
                     Últimas <span class="highlight">Notícias</span>
                 </h2>
-                <p class="section-subtitle">
-                    Fique por dentro das novidades do mercado de trabalho e oportunidades em destaque
+                <p class="section-subtitle" style="color: white;">
+                    Fique por dentro das novidades do mercado de trabalho e notícias em destaque
                 </p>
             </div>
-
-            <div class="news-filters">
-                <button class="news-filter-btn active" data-filter="all">Todas</button>
-                <button class="news-filter-btn" data-filter="vagas">Vagas</button>
-                <button class="news-filter-btn" data-filter="cursos">Cursos</button>
-                <button class="news-filter-btn" data-filter="beneficios">Benefícios</button>
-                <button class="news-filter-btn" data-filter="economia">Economia</button>
-            </div>
-
             <div class="news-grid" id="news-grid">
-                <!-- News will be loaded dynamically -->
+    <div class="news-card">
+        <div class="news-image">
+            <img src="/placeholder.svg?height=200&width=400&text=Novas+Vagas+2024" alt="Novas Vagas 2024">
+            <div class="news-date">15/01/2024</div>
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Governo Anuncia 50 Mil Novas Vagas de Emprego para 2024</h3>
+            <p class="news-excerpt">Programa nacional de geração de empregos prevê criação de oportunidades em diversos setores da economia...</p>
+            <div class="news-meta">
+                <div class="news-author">
+                    <i class="fas fa-user"></i>
+                    <span>Ministério do Trabalho</span>
+                </div>
+                <div class="news-read-more">
+                    <span>Ler mais</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
             </div>
-
+        </div>
+    </div>
+    <div class="news-card">
+        <div class="news-image">
+            <img src="/placeholder.svg?height=200&width=400&text=Cursos+Tecnologia" alt="Cursos Tecnologia">
+            <div class="news-date">12/01/2024</div>
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Novos Cursos Gratuitos de Tecnologia Disponíveis</h3>
+            <p class="news-excerpt">Secretaria do Trabalho lança programa de capacitação em programação, inteligência artificial e análise de dados...</p>
+            <div class="news-meta">
+                <div class="news-author">
+                    <i class="fas fa-user"></i>
+                    <span>Equipe de Capacitação</span>
+                </div>
+                <div class="news-read-more">
+                    <span>Ler mais</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-card">
+        <div class="news-image">
+            <img src="/placeholder.svg?height=200&width=400&text=Seguro+Desemprego" alt="Seguro Desemprego">
+            <div class="news-date">10/01/2024</div>
+        </div>
+        <div class="news-content">
+            <h3 class="news-title">Seguro-Desemprego: Novas Regras Facilitam Acesso</h3>
+            <p class="news-excerpt">Mudanças na legislação tornam mais simples o processo de solicitação do benefício...</p>
+            <div class="news-meta">
+                <div class="news-author">
+                    <i class="fas fa-user"></i>
+                    <span>Departamento de Benefícios</span>
+                </div>
+                <div class="news-read-more">
+                    <span>Ler mais</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
             <div class="text-center">
                 <button class="btn btn-outline" onclick="loadMoreNews()">
                     <i class="fas fa-plus"></i>
                     Carregar Mais Notícias
                 </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    Entre em <span class="highlight">Contato</span>
-                </h2>
-                <p class="section-subtitle">
-                    Estamos aqui para ajudar você em sua jornada profissional. Fale conosco!
-                </p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Entre em <span class="highlight">Contato</span></h2>
-                    <p>Estamos aqui para ajudar você em sua jornada profissional</p>
-
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Endereço</h4>
-                            <p>Av. Rio de Janeiro, 720 CEP 86220-000 - Assaí - PR
-CEP: 86220-000</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Telefone</h4>
-                            <p>(43) 3262-4958 </p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>E-mail</h4>
-                            <p>assai@assai.pr.gov.br</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>Horário de Funcionamento</h4>
-                            <p>08h00 às 11h30min  - 13h00 às  17h00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Nome Completo</label>
-                                <input type="text" id="name" name="name" placeholder="Seu nome" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
-                        </div>
-                        <div class="form-group">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" placeholder="Sua mensagem..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <i class="fas fa-paper-plane"></i>
-                            Enviar Mensagem
-                        </button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -2317,7 +1943,6 @@ CEP: 86220-000</p>
                     </div>
                     <p>Conectando pessoas ao mercado de trabalho e promovendo o desenvolvimento profissional.</p>
                 </div>
-
                 <div class="footer-section">
                     <h4>Serviços</h4>
                     <ul>
@@ -2327,7 +1952,6 @@ CEP: 86220-000</p>
                         <li><a href="#">Seguro-Desemprego</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>Informações</h4>
                     <ul>
@@ -2337,7 +1961,6 @@ CEP: 86220-000</p>
                         <li><a href="#">Política de Privacidade</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>Contato</h4>
                     <ul>
@@ -2347,7 +1970,6 @@ CEP: 86220-000</p>
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
             </div>
         </div>
@@ -2367,11 +1989,8 @@ CEP: 86220-000</p>
             <div class="modal-body">
                 <div class="tabs">
                     <div class="tabs-list">
-                        <button class="tabs-trigger active" onclick="switchTab('personal')">Dados Pessoais</button>
-                        <button class="tabs-trigger" onclick="switchTab('professional')">Experiência</button>
                         <button class="tabs-trigger" onclick="switchTab('upload')">Upload CV</button>
                     </div>
-
                     <div id="personal" class="tabs-content active">
                         <form>
                             <div class="form-row">
@@ -2400,7 +2019,6 @@ CEP: 86220-000</p>
                             </div>
                         </form>
                     </div>
-
                     <div id="professional" class="tabs-content">
                         <form>
                             <div class="form-group">
@@ -2417,7 +2035,6 @@ CEP: 86220-000</p>
                             </div>
                         </form>
                     </div>
-
                     <div id="upload" class="tabs-content">
                         <div class="upload-area" onclick="document.getElementById('cv-file').click()">
                             <div class="upload-icon">
@@ -2433,7 +2050,6 @@ CEP: 86220-000</p>
                         </div>
                     </div>
                 </div>
-
                 <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 2rem;">
                     <button class="btn btn-outline" onclick="closeModal('curriculum-modal')">Cancelar</button>
                     <button class="btn btn-primary" onclick="submitCurriculum()">Cadastrar Currículo</button>
@@ -2448,122 +2064,11 @@ CEP: 86220-000</p>
             <div class="modal-header">
                 <h2>Buscar Vagas</h2>
                 <p>Encontre oportunidades ideais para seu perfil profissional.</p>
-                <button class="modal-close" onclick="closeModal('jobs-modal')">
+                <button class="modal-close">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <div class="modal-body">
-                <form id="job-search-form">
-                    <div class="form-group">
-                        <label for="job-title">Cargo ou Palavra-chave</label>
-                        <input type="text" id="job-title" name="job-title" placeholder="Ex: Desenvolvedor, Vendedor, Analista...">
-                    </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="job-location">Localização</label>
-                            <input type="text" id="job-location" name="job-location" placeholder="Cidade, Estado">
-                        </div>
-                        <div class="form-group">
-                            <label for="job-category">Categoria</label>
-                            <select id="job-category" name="job-category">
-                                <option value="">Selecione a categoria</option>
-                                <option value="tech">Tecnologia</option>
-                                <option value="admin">Administrativo</option>
-                                <option value="sales">Vendas</option>
-                                <option value="health">Saúde</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="salary-min">Salário Mínimo</label>
-                            <input type="number" id="salary-min" name="salary-min" placeholder="R$ 0,00">
-                        </div>
-                        <div class="form-group">
-                            <label for="job-type">Tipo de Contrato</label>
-                            <select id="job-type" name="job-type">
-                                <option value="">Selecione o tipo</option>
-                                <option value="clt">CLT</option>
-                                <option value="pj">PJ</option>
-                                <option value="estagio">Estágio</option>
-                                <option value="temporario">Temporário</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 2rem;">
-                        <button type="button" class="btn btn-outline">Limpar Filtros</button>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-search"></i>
-                            Buscar Vagas
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Insurance Modal -->
-    <div id="insurance-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Solicitar Seguro-Desemprego</h2>
-                <p>Solicite seu benefício de forma rápida e segura. Tenha os documentos necessários em mãos.</p>
-                <button class="modal-close" onclick="closeModal('insurance-modal')">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="info-box">
-                    <h3>Documentos Necessários:</h3>
-                    <ul>
-                        <li>Carteira de Trabalho</li>
-                        <li>Termo de Rescisão</li>
-                        <li>CPF</li>
-                        <li>Comprovante de Residência</li>
-                        <li>3 últimos comprovantes de pagamento</li>
-                    </ul>
-                </div>
-
-                <form id="insurance-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="worker-name">Nome Completo</label>
-                            <input type="text" id="worker-name" name="worker-name" placeholder="Seu nome completo" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="worker-cpf">CPF</label>
-                            <input type="text" id="worker-cpf" name="worker-cpf" placeholder="000.000.000-00" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="dismissal-date">Data da Demissão</label>
-                            <input type="date" id="dismissal-date" name="dismissal-date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="last-salary">Último Salário</label>
-                            <input type="number" id="last-salary" name="last-salary" step="0.01" placeholder="R$ 0,00" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="company-name">Nome da Empresa</label>
-                        <input type="text" id="company-name" name="company-name" placeholder="Nome da última empresa" required>
-                    </div>
-
-                    <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 2rem;">
-                        <button type="button" class="btn btn-outline" onclick="closeModal('insurance-modal')">Cancelar</button>
-                        <button type="submit" class="btn" style="background: var(--gradient-primary); color: white;">
-                            <i class="fas fa-shield-alt"></i>
-                            Solicitar Benefício
-                        </button>
-                    </div>
-                </form>
-            </div>
         </div>
     </div>
 
@@ -2573,401 +2078,87 @@ CEP: 86220-000</p>
     </button>
 
     <script>
-        // Sample Jobs Data
-        const jobsData = [
-            {
-                id: 1,
-                title: 'Desenvolvedor Full Stack',
-                company: 'TechCorp',
-                location: 'São Paulo, SP',
-                salary: 'R$ 8.000 - R$ 12.000',
-                type: 'CLT',
-                category: 'tech',
-                description: 'Desenvolvimento de aplicações web usando React, Node.js e MongoDB.',
-                posted: '2 dias atrás',
-                featured: true
-            },
-            {
-                id: 2,
-                title: 'Assistente Administrativo',
-                company: 'Empresa ABC',
-                location: 'Rio de Janeiro, RJ',
-                salary: 'R$ 2.500 - R$ 3.500',
-                type: 'CLT',
-                category: 'admin',
-                description: 'Apoio administrativo geral, atendimento ao cliente e organização de documentos.',
-                posted: '1 dia atrás',
-                featured: false
-            },
-            {
-                id: 3,
-                title: 'Vendedor Externo',
-                company: 'VendasMax',
-                location: 'Belo Horizonte, MG',
-                salary: 'R$ 2.000 + comissões',
-                type: 'CLT',
-                category: 'sales',
-                description: 'Prospecção de clientes, apresentação de produtos e fechamento de vendas.',
-                posted: '3 dias atrás',
-                featured: false
-            },
-            {
-                id: 4,
-                title: 'Enfermeiro(a)',
-                company: 'Hospital Central',
-                location: 'Salvador, BA',
-                salary: 'R$ 4.500 - R$ 6.000',
-                type: 'CLT',
-                category: 'health',
-                description: 'Cuidados de enfermagem em UTI, administração de medicamentos.',
-                posted: '1 dia atrás',
-                featured: true
-            },
-            {
-                id: 5,
-                title: 'Analista de Dados',
-                company: 'DataTech',
-                location: 'Brasília, DF',
-                salary: 'R$ 6.000 - R$ 9.000',
-                type: 'CLT',
-                category: 'tech',
-                description: 'Análise de dados, criação de dashboards e relatórios gerenciais.',
-                posted: '4 dias atrás',
-                featured: false
-            },
-            {
-                id: 6,
-                title: 'Recepcionista',
-                company: 'Hotel Premium',
-                location: 'Fortaleza, CE',
-                salary: 'R$ 1.800 - R$ 2.200',
-                type: 'CLT',
-                category: 'admin',
-                description: 'Atendimento aos hóspedes, check-in/check-out, reservas.',
-                posted: '2 dias atrás',
-                featured: false
-            }
-        ];
+      // Sample Jobs Data
+const jobsData = [
+    {
+        id: 1,
+        title: 'Desenvolvedor Full Stack',
+        company: 'TechCorp',
+        location: 'São Paulo, SP',
+        salary: 'R$ 8.000 - R$ 12.000',
+        type: 'CLT',
+        category: 'tech',
+        description: 'Desenvolvimento de aplicações web usando React, Node.js e MongoDB.',
+        posted: '2 dias atrás',
+        featured: true
+    },
+    {
+        id: 2,
+        title: 'Assistente Administrativo',
+        company: 'Empresa ABC',
+        location: 'Rio de Janeiro, RJ',
+        salary: 'R$ 2.500 - R$ 3.500',
+        type: 'CLT',
+        category: 'admin',
+        description: 'Apoio administrativo geral, atendimento ao cliente e organização de documentos.',
+        posted: '1 dia atrás',
+        featured: false
+    },
+    {
+        id: 3,
+        title: 'Vendedor Externo',
+        company: 'Vendas Plus',
+        location: 'Belo Horizonte, MG',
+        salary: 'R$ 2.000 + comissões',
+        type: 'CLT',
+        category: 'sales',
+        description: 'Vendas de produtos e serviços para clientes externos.',
+        posted: '3 dias atrás',
+        featured: false
+    },
+    {
+        id: 4,
+        title: 'Enfermeiro(a)',
+        company: 'Hospital Central',
+        location: 'Brasília, DF',
+        salary: 'R$ 4.500 - R$ 6.000',
+        type: 'CLT',
+        category: 'health',
+        description: 'Cuidados de enfermagem em unidade hospitalar.',
+        posted: '1 dia atrás',
+        featured: true
+    },
+    {
+        id: 5,
+        title: 'Analista de Sistemas',
+        company: 'SoftTech',
+        location: 'Porto Alegre, RS',
+        salary: 'R$ 6.000 - R$ 8.500',
+        type: 'CLT',
+        category: 'tech',
+        description: 'Análise e desenvolvimento de sistemas corporativos.',
+        posted: '4 dias atrás',
+        featured: false
+    },
+    {
+        id: 6,
+        title: 'Auxiliar Contábil',
+        company: 'Contabilidade Geral',
+        location: 'Salvador, BA',
+        salary: 'R$ 2.200 - R$ 2.800',
+        type: 'CLT',
+        category: 'admin',
+        description: 'Auxiliar nas rotinas contábeis e fiscais da empresa.',
+        posted: '2 dias atrás',
+        featured: false
+    }
+];
 
-        let currentJobs = [];
-        let displayedJobs = 0;
-        const jobsPerLoad = 6;
-        let activeFilter = 'all';
-
-        // DOM Elements
-        const loadingScreen = document.getElementById('loading-screen');
-        const navToggle = document.getElementById('nav-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const backToTopBtn = document.getElementById('back-to-top');
-        const jobsGrid = document.getElementById('jobs-grid');
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const header = document.getElementById('header');
-
-        // Loading Screen
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                loadingScreen.style.opacity = '0';
-                setTimeout(() => {
-                    loadingScreen.style.display = 'none';
-                }, 500);
-            }, 1500);
-        });
-
-        // Mobile Navigation
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
-        });
-
-        // Smooth Scrolling
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Active Navigation Link
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Back to Top Button
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Counter Animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-            
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = target / 200;
-                let current = 0;
-                
-                const updateCounter = () => {
-                    if (current < target) {
-                        current += increment;
-                        counter.textContent = Math.ceil(current).toLocaleString();
-                        setTimeout(updateCounter, 10);
-                    } else {
-                        counter.textContent = target.toLocaleString();
-                    }
-                };
-                
-                updateCounter();
-            });
-        }
-
-        // Trigger counter animation when hero section is visible
-        const heroSection = document.querySelector('.hero');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.unobserve(entry.target);
-                }
-            });
-        });
-        observer.observe(heroSection);
-
-        // Load Jobs
-        function loadJobs(category = 'all') {
-            currentJobs = category === 'all' ? jobsData : jobsData.filter(job => job.category === category);
-            displayedJobs = 0;
-            jobsGrid.innerHTML = '';
-            loadMoreJobs();
-        }
-
-        function loadMoreJobs() {
-            const jobsToShow = currentJobs.slice(displayedJobs, displayedJobs + jobsPerLoad);
-            
-            jobsToShow.forEach(job => {
-                const jobCard = createJobCard(job);
-                jobsGrid.appendChild(jobCard);
-            });
-            
-            displayedJobs += jobsToShow.length;
-        }
-
-        function createJobCard(job) {
-            const card = document.createElement('div');
-            card.className = 'job-card';
-            card.innerHTML = `
-                <div class="job-header">
-                    <div>
-                        <h3 class="job-title">${job.title}</h3>
-                        <p class="job-company">${job.company}</p>
-                    </div>
-                    <span class="job-badge ${job.featured ? 'featured' : ''}">${job.featured ? 'Destaque' : job.type}</span>
-                </div>
-                <div class="job-info">
-                    <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
-                    <span><i class="fas fa-clock"></i> ${job.posted}</span>
-                </div>
-                <p class="job-description">${job.description}</p>
-                <div class="job-footer">
-                    <span class="job-salary">${job.salary}</span>
-                    <button class="job-apply" onclick="applyForJob(${job.id})">
-                        <i class="fas fa-paper-plane"></i> Candidatar-se
-                    </button>
-                </div>
-            `;
-            return card;
-        }
-
-        // Job Filter
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                const category = btn.getAttribute('data-filter');
-                activeFilter = category;
-                loadJobs(category);
-            });
-        });
-
-        // Apply for Job
-        function applyForJob(jobId) {
-            const job = jobsData.find(j => j.id === jobId);
-            if (job) {
-                alert(`Candidatura enviada para a vaga: ${job.title} na empresa ${job.company}`);
-            }
-        }
-
-        // Initialize jobs on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            loadJobs();
-        });
-
-        // Modal Functions
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-        }
-
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Close modal when clicking outside
-        window.addEventListener('click', (e) => {
-            if (e.target.classList.contains('modal')) {
-                e.target.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Tab Functions
-        function switchTab(tabName) {
-            // Remove active class from all triggers and contents
-            document.querySelectorAll('.tabs-trigger').forEach(trigger => {
-                trigger.classList.remove('active');
-            });
-            document.querySelectorAll('.tabs-content').forEach(content => {
-                content.classList.remove('active');
-            });
-
-            // Add active class to clicked trigger and corresponding content
-            event.target.classList.add('active');
-            document.getElementById(tabName).classList.add('active');
-        }
-
-        // Form Submissions
-        function submitCurriculum() {
-            alert('Currículo cadastrado com sucesso! Entraremos em contato em breve.');
-            closeModal('curriculum-modal');
-        }
-
-        document.getElementById('job-search-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Busca realizada! Confira os resultados abaixo.');
-            closeModal('jobs-modal');
-            scrollToSection('jobs');
-        });
-
-        document.getElementById('insurance-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Solicitação de seguro-desemprego enviada! Acompanhe o status pelo portal.');
-            closeModal('insurance-modal');
-        });
-
-        document.getElementById('contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Mensagem enviada com sucesso! Responderemos em até 24 horas.');
-            e.target.reset();
-        });
-
-        // Input Masks
-        function applyMasks() {
-            // CPF Mask
-            const cpfInputs = document.querySelectorAll('input[name="cpf"], input[name="worker-cpf"]');
-            cpfInputs.forEach(input => {
-                input.addEventListener('input', (e) => {
-                    let value = e.target.value.replace(/\D/g, '');
-                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                    value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-                    e.target.value = value;
-                });
-            });
-
-            // Phone Mask
-            const phoneInputs = document.querySelectorAll('input[type="tel"]');
-            phoneInputs.forEach(input => {
-                input.addEventListener('input', (e) => {
-                    let value = e.target.value.replace(/\D/g, '');
-                    value = value.replace(/(\d{2})(\d)/, '($1) $2');
-                    value = value.replace(/(\d{4})(\d)/, '$1-$2');
-                    value = value.replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3');
-                    e.target.value = value;
-                });
-            });
-        }
-
-        // Apply masks when page loads
-        document.addEventListener('DOMContentLoaded', applyMasks);
-
-        // Intersection Observer for animations
-        function initScrollAnimations() {
-            const elements = document.querySelectorAll('.quick-card, .service-card, .job-card, .course-card');
-            
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const animationObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                        animationObserver.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            elements.forEach(element => {
-                element.style.opacity = '0';
-                element.style.transform = 'translateY(30px)';
-                element.style.transition = 'all 0.6s ease';
-                animationObserver.observe(element);
-            });
-        }
-
-        // Initialize scroll animations
-        document.addEventListener('DOMContentLoaded', initScrollAnimations);
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+    loadJobs(); // Esta linha garante que as vagas sejam carregadas automaticamente
+    loadNews();
+});
 
         // Sample News Data
         const newsData = [
@@ -3039,10 +2230,187 @@ CEP: 86220-000</p>
             }
         ];
 
+        let currentJobs = [];
+        let displayedJobs = 0;
+        const jobsPerLoad = 6;
+        let activeFilter = 'all';
+
         let currentNews = [];
         let displayedNews = 0;
         const newsPerLoad = 6;
         let activeNewsFilter = 'all';
+
+        // DOM Elements
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const backToTopBtn = document.getElementById('back-to-top');
+        const jobsGrid = document.getElementById('jobs-grid');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const header = document.getElementById('header');
+
+        // Smooth Scrolling Function with Animation
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                // Calculate offset for fixed header
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const sectionTop = section.offsetTop - headerHeight - 20;
+                
+                // Smooth scroll with animation
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+                
+                // Add visual feedback animation
+                section.style.transform = 'scale(1.02)';
+                section.style.transition = 'transform 0.3s ease';
+                
+                setTimeout(() => {
+                    section.style.transform = 'scale(1)';
+                }, 300);
+            }
+        }
+
+        // Mobile Navigation
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Enhanced Navigation Links with Animation
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Close mobile menu
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+                
+                // Get section ID from href
+                const sectionId = link.getAttribute('href').substring(1);
+                
+                // Add loading animation to clicked link
+                link.style.transform = 'scale(0.95)';
+                link.style.transition = 'transform 0.2s ease';
+                
+                setTimeout(() => {
+                    link.style.transform = 'scale(1)';
+                    scrollToSection(sectionId);
+                }, 100);
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Enhanced Active Navigation Link Detection
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - headerHeight - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href').substring(1);
+                if (href === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Back to Top Button
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Load Jobs
+        function loadJobs(category = 'all') {
+            currentJobs = category === 'all' ? jobsData : jobsData.filter(job => job.category === category);
+            displayedJobs = 0;
+            jobsGrid.innerHTML = '';
+            loadMoreJobs();
+        }
+
+        function loadMoreJobs() {
+            const jobsToShow = currentJobs.slice(displayedJobs, displayedJobs + jobsPerLoad);
+            
+            jobsToShow.forEach(job => {
+                const jobCard = createJobCard(job);
+                jobsGrid.appendChild(jobCard);
+            });
+            
+            displayedJobs += jobsToShow.length;
+        }
+
+        function createJobCard(job) {
+            const card = document.createElement('div');
+            card.className = 'job-card';
+            card.innerHTML = `
+                <div class="job-header">
+                    <div>
+                        <h3 class="job-title">${job.title}</h3>
+                        <p class="job-company">${job.company}</p>
+                    </div>
+                    <span class="job-badge ${job.featured ? 'featured' : ''}">${job.featured ? 'Destaque' : job.type}</span>
+                </div>
+                <div class="job-info">
+                    <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
+                    <span><i class="fas fa-clock"></i> ${job.posted}</span>
+                </div>
+                <p class="job-description">${job.description}</p>
+                <div class="job-footer">
+                    <span class="job-salary">${job.salary}</span>
+                    <button class="job-apply" onclick="applyForJob(${job.id})">
+                        <i class="fas fa-paper-plane"></i> Candidatar-se
+                    </button>
+                </div>
+            `;
+            return card;
+        }
+
+        // Job Filter
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.getAttribute('data-filter');
+                activeFilter = category;
+                loadJobs(category);
+            });
+        });
+
+        // Apply for Job
+        function applyForJob(jobId) {
+            const job = jobsData.find(j => j.id === jobId);
+            if (job) {
+                alert(`Candidatura enviada para a vaga: ${job.title} na empresa ${job.company}`);
+            }
+        }
 
         // Load News
         function loadNews(category = 'all') {
@@ -3062,6 +2430,12 @@ CEP: 86220-000</p>
             });
             
             displayedNews += newsToShow.length;
+            
+            // Hide load more button if all news are displayed
+            const loadMoreBtn = document.querySelector('.btn.btn-outline');
+            if (displayedNews >= currentNews.length) {
+                loadMoreBtn.style.display = 'none';
+            }
         }
 
         function createNewsCard(news, isFeatured = false) {
@@ -3074,7 +2448,6 @@ CEP: 86220-000</p>
             card.innerHTML = `
                 <div class="news-image">
                     <img src="${news.image}" alt="${news.title}">
-                    <div class="news-category ${news.category}">${getCategoryName(news.category)}</div>
                     <div class="news-date">${formattedDate}</div>
                 </div>
                 <div class="news-content">
@@ -3095,35 +2468,6 @@ CEP: 86220-000</p>
             return card;
         }
 
-        function getCategoryName(category) {
-            const categories = {
-                'vagas': 'Vagas',
-                'cursos': 'Cursos',
-                'beneficios': 'Benefícios',
-                'economia': 'Economia'
-            };
-            return categories[category] || category;
-        }
-
-        // News Filter
-        document.addEventListener('DOMContentLoaded', () => {
-            const newsFilterBtns = document.querySelectorAll('.news-filter-btn');
-            
-            newsFilterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    newsFilterBtns.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    
-                    const category = btn.getAttribute('data-filter');
-                    activeNewsFilter = category;
-                    loadNews(category);
-                });
-            });
-
-            // Initialize news on page load
-            loadNews();
-        });
-
         // Open News Modal
         function openNewsModal(news) {
             const modal = document.createElement('div');
@@ -3140,7 +2484,6 @@ CEP: 86220-000</p>
                 <div class="modal-content" style="max-width: 800px;">
                     <div class="modal-header">
                         <div style="margin-bottom: 1rem;">
-                            <span class="news-category ${news.category}" style="position: static; margin-right: 1rem;">${getCategoryName(news.category)}</span>
                             <span style="color: var(--text-secondary); font-size: 0.9rem;">${formattedDate}</span>
                         </div>
                         <h2>${news.title}</h2>
@@ -3198,6 +2541,65 @@ CEP: 86220-000</p>
                 });
             }
         }
+
+        // Modal Functions
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                e.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Tab Functions
+        function switchTab(tabName) {
+            // Remove active class from all triggers and contents
+            document.querySelectorAll('.tabs-trigger').forEach(trigger => {
+                trigger.classList.remove('active');
+            });
+            document.querySelectorAll('.tabs-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Add active class to clicked trigger and corresponding content
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        // Form Submissions
+        function submitCurriculum() {
+            alert('Currículo cadastrado com sucesso! Entraremos em contato em breve.');
+            closeModal('curriculum-modal');
+        }
+
+        document.getElementById('job-search-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Busca realizada! Confira os resultados abaixo.');
+            closeModal('jobs-modal');
+            scrollToSection('jobs');
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadJobs();
+            loadNews();
+        });
 
         console.log('Portal da Secretaria do Trabalho carregado com sucesso! 🚀');
     </script>
