@@ -2145,7 +2145,7 @@ const jobsData = [
         title: 'Auxiliar Contábil',
         company: 'Contabilidade Geral',
         location: 'Salvador, BA',
-        salary: 'R$ 2.200 - R$ 2.800',
+        salary: 'R$ 2.200 - R$ 2.900',
         type: 'CLT',
         category: 'admin',
         description: 'Auxiliar nas rotinas contábeis e fiscais da empresa.',
