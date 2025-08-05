@@ -2133,7 +2133,7 @@ const jobsData = [
         title: 'Analista de Sistemas',
         company: 'SoftTech',
         location: 'Porto Alegre, RS',
-        salary: 'R$ 6.000 - R$ 8.500',
+        salary: 'R$ 6.000 - R$ 7.500',
         type: 'CLT',
         category: 'tech',
         description: 'Análise e desenvolvimento de sistemas corporativos.',
